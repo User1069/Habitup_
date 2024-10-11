@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>HabitUp</title>
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li> <a href="index.html">INICIO</a> </li>
+      <li> <a href="que son.html">QUE SON LOS BUENOS HABITOS</a> </li>
+      <li> <a href="rutinas.html">RUTINAS DE EJERCICIO</a> </li>
+      <li> <a href="contacto.html">DIETAS SALUDABLES</a> </li>
+      <li> <a href="contac.html">CONTACTO</a> </li>
+    </ul>
+  </nav>
+
+  <section class="container">
+    <div class="section side">
+      <img src="imagen lateral .jpg" alt="Imagen Lateral 1" class="side-image">
+    </div>
+    
+    <div class="section main">
+      <h1>HabitUp</h1>
+      <br>
+
+      <div id="habit-options" class="jol">
+        <label for="habit-select">Selecciona tu hábito diario:</label>
+        <select id="habit-select">
+          <option value="dieta">Dieta Saludable</option>
+          <option value="horario">Horario Nocturno</option>
+          <option value="ejercicio">Hacer Ejercicio</option>
+        </select>
+      </div>
+      
+      <div class="form-group jol" id="alert-options">
+        <label for="time">Seleccionar hora de alerta:</label>
+        <input type="time" id="time">
+      </div>
+      
+      <div id="daily-tracker">
+        <button onclick="registrarHabitoDiario()">Registrar</button>
+        <button onclick="setAlert()">Configurar Alerta</button>
+        <div id="racha-info">Racha actual: <span id="racha-count">0</span></div>
+      </div>
+    </div>
+    
+    <div class="section side">
+      <img src="imagen lateral .jpg" alt="Imagen Lateral 2" class="side-image">
+    </div>
+  </section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>¿Completaste el objetivo de hoy?</p>
+      <button onclick="completado()">Completado</button>
+      <button onclick="noCompletado()">No lo completé</button>
+    </div>
+  </div>
+  
+  <div id="mensaje-container" class="popup">
+    <div class="popup-content mensaje">
+      <p id="mensaje-racha"></p>
+      <button id="boton-continuar">Continuar</button>
+    </div>
+  </div>
+
+  <center>
+    <footer>
+      <div class="pie">
+        HabitUp <br>
+        Ubicacion: Institucion Educativa Gonzalo Rivera Laguado <br>
+        JolgerForero@gmail.com <br>
+        --------------------------------------- <br>
+        2024
+      </div>
+    </center>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>

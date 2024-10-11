@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #87c47f;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin: 20px auto;
+  background-color: #ea899a;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 600px;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centra el menú horizontalmente */
+  padding: 20px; /* Espacio alrededor del menú */
+  background: #ea899a; /* Fondo del menú */
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding */
+  margin: 0; /* Elimina el margen */
+  display: flex; /* Flex para un diseño horizontal */
+}
+
+nav ul li {
+  margin: 0 15px; /* Espacio entre los elementos */
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px; /* Espacio alrededor de los enlaces */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Efecto hover con fondo claro */
+  color: rgb(45, 151, 45); /* Cambia el color del texto al pasar el ratón */
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.side img {
+  max-width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.main {
+  flex: 2;
+  max-width: 600px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jol {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ea899a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#racha-info {
+  margin-top: 10px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup button {
+  margin: 10px;
+}
+
+#mensaje-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mensaje button {
+  margin: 10px;
+}
+
+footer {
+  margin-top: 200px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+    align-items: center; /* Centra los elementos del menú */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espacio entre los elementos en vertical */
+  }
+}

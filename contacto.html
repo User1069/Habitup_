@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietas Saludables según Peso Corporal</title>
+     <link rel="stylesheet" href="dietas.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+          <li> <a href="index.html">INICIO</a> </li>
+          <li> <a href="que son.html">QUE SON LOS BUENOS HABITOS</a> </li>
+          <li> <a href="rutinas.html">RUTINAS DE EJERCICIO</a> </li>
+          <li> <a href="contacto.html">DIETAS SALUDABLES</a> </li>
+          <li> <a href="contac.html">CONTACTO</a> </li>
+        </ul>
+      </nav>
+
+    <h1>Dietas Saludables según Peso Corporal</h1>
+
+    <h2>Semana 1</h2>
+    <button onclick="showDiet('week1-diet1')">Dieta 50kg - 70kg</button>
+    <button onclick="showDiet('week1-diet2')">Dieta 70kg - 90kg</button>
+    <button onclick="showDiet('week1-diet3')">Dieta 90kg - 110kg</button>
+
+    <h2>Semana 2</h2>
+    <button onclick="showDiet('week2-diet1')">Dieta 50kg - 70kg</button>
+    <button onclick="showDiet('week2-diet2')">Dieta 70kg - 90kg</button>
+    <button onclick="showDiet('week2-diet3')">Dieta 90kg - 110kg</button>
+
+    <h2>Semana 3</h2>
+    <button onclick="showDiet('week3-diet1')">Dieta 50kg - 70kg</button>
+    <button onclick="showDiet('week3-diet2')">Dieta 70kg - 90kg</button>
+    <button onclick="showDiet('week3-diet3')">Dieta 90kg - 110kg</button>
+
+    <h2>Semana 4</h2>
+    <button onclick="showDiet('week4-diet1')">Dieta 50kg - 70kg</button>
+    <button onclick="showDiet('week4-diet2')">Dieta 70kg - 90kg</button>
+    <button onclick="showDiet('week4-diet3')">Dieta 90kg - 110kg</button>
+
+    <!-- Ventana emergente -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- La dieta semanal se cargará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <footer>
+          <div class="pie">
+            HabitUp <br>
+            Ubicacion: Institucion Educativa Gonzalo Rivera Laguado <br>
+            JolgerForero@gmail.com <br>
+            --------------------------------------- <br>
+            2024
+          </div>
+        </center>
+      </footer>
+
+    <script src="dietas.js"></script>
+</body>
+</html>

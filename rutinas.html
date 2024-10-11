@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutinas de Ejercicio</title>
+    <link rel="stylesheet" href="rutinas.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+          <li> <a href="index.html">INICIO</a> </li>
+          <li> <a href="que son.html">QUE SON LOS BUENOS HABITOS</a> </li>
+          <li> <a href="rutinas.html">RUTINAS DE EJERCICIO </a> </li>
+          <li> <a href="contacto.html">DIETAS SALUDABLES</a> </li>
+          <li> <a href="contac.html">CONTACTO</a> </li>
+        </ul>
+      </nav>
+    <header>
+        <h1>Rutinas de Ejercicio</h1>
+    </header>
+
+    <main>
+        <section class="exercise-sections">
+            <div class="exercise-section">
+                <h2>Para personas entre 50kg y 70kg</h2>
+                <button onclick="showExercise('exercises1')">Mostrar Rutina</button>
+            </div>
+            <div class="exercise-section">
+                <h2>Para personas entre 70kg y 90kg</h2>
+                <button onclick="showExercise('exercises2')">Mostrar Rutina</button>
+            </div>
+            <div class="exercise-section">
+                <h2>Para personas entre 90kg y 110kg</h2>
+                <button onclick="showExercise('exercises3')">Mostrar Rutina</button>
+            </div>
+        </section>
+
+        <!-- Modal para mostrar la rutina de ejercicios -->
+        <div id="exercise-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modal-exercise-content"></div>
+            </div>
+        </div>
+    </main>
+
+    <center>
+        <footer>
+          <div class="pie">
+            HabitUp <br>
+            Ubicacion: Institucion Educativa Gonzalo Rivera Laguado <br>
+            JolgerForero@gmail.com <br>
+            --------------------------------------- <br>
+            2024
+          </div>
+        </center>
+      </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
